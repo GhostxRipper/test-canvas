@@ -1,0 +1,42 @@
+{
+  "name": "test-canvas",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "author": "GhostxRipper <yann_ams@icloud.com>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.47",
+    "@babel/plugin-proposal-class-properties": "^7.0.0-beta.47",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.47",
+    "@babel/preset-env": "^7.0.0-beta.47",
+    "@babel/preset-flow": "^7.0.0-beta.47",
+    "@babel/preset-react": "^7.0.0-beta.47",
+    "babel-eslint": "^8.2.3",
+    "babel-loader": "^8.0.0-beta.3",
+    "connect-history-api-fallback": "^1.5.0",
+    "css-loader": "^0.28.11",
+    "eslint": "^4.9.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.4.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "html-webpack-plugin": "^3.2.0",
+    "http-proxy-middleware": "^0.18.0",
+    "koa-connect": "^2.0.1",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.8.3",
+    "webpack-cli": "^2.1.3",
+    "webpack-serve": "^1.0.2"
+  },
+  "dependencies": {
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-hot-loader": "^4.2.0"
+  },
+  "scripts": {
+    "build": "rm -rf docs; webpack-cli --config *.prod.js",
+    "dev": "webpack-serve --config *.dev.js"
+  }
+}
